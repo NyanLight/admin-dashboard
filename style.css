@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 aside {
@@ -58,7 +58,109 @@ aside {
     font-weight: 600;
 }
 
+header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 5px 10px 5px red;
+    padding: 2rem;
+}
+
+.searchPart {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 2fr;
+}
+
+input {
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(188, 188, 194, 0.199);
+    
+
+}
+
+.leftPart {
+    display: flex;
+    gap: 1rem;
+}
 
 
+.rightPart {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+}
+
+.rightPart > .userpick {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.rightPart > span {
+    font-weight: 1000;
+    font-size: 1.5rem;
+}
+
+.hiUser > .userpick {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.accountPart {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hiUser {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.hiUser img {
+    grid-row: 1 / span 2;
+    grid-template-rows: 1 / span 2;
+}
+
+.hiUser span:first-of-type {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+.hiUser :last-child {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+}
+
+button {
+    width: 10%;
+}
 
 
+main {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+article {
+    grid-column: 1 / span 1;
+}
