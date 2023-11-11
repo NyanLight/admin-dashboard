@@ -69,7 +69,7 @@ header {
     position: relative;
     grid-template-rows: repeat(2, 1fr);
     box-shadow: 0px 5px 5px 0px #b1b0ab;;
-    padding: 2rem;
+    padding: 0rem 2rem;
     gap: 1rem;
 }
 
@@ -81,12 +81,10 @@ header {
 
 input {
     width: 80%;
-    height: 2rem;
+    height: 3rem;
     border: none;
     border-radius: 1rem;
-    background-color: rgba(188, 188, 194, 0.199);
-    
-
+    background-color: #E2E8F0;
 }
 
 .leftPart {
@@ -125,6 +123,11 @@ input {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
 }
+
+#greetings {
+    font-size: 1.4rem;
+}
+
 
 .hiUser {
     display: grid;
@@ -175,8 +178,8 @@ main {
     display: grid !important; 
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 1rem 3rem 1rem 2rem;
+    gap: 2rem;
 }
 
 h2 {
@@ -202,9 +205,20 @@ article {
     background-color: #FFFFFF;
     padding: 2.5rem;
     border-left:  5px solid #EDB93F;
+    border-radius: 10px 0px 0px 10px;
     min-height: 200px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card:not(:hover) {
+    transform: scale(1);
+    transition: 1s;
 }
 
 .cardIcons {
@@ -215,8 +229,8 @@ article {
 }
 
 .userpicks{
-    height: 4rem;
-    width: 4rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 50%;
 }
 
@@ -226,6 +240,24 @@ article {
     background-color: #FFFFFF;
     border-radius: 5px;
 }
+
+.announcement h4 {
+    margin: 0;
+} 
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.announcement:not(:last-of-type) {
+    border-bottom: 1px solid rgb(214, 208, 208);
+}
+
+
 
 .mainSide {
     grid-column: 2;
@@ -237,9 +269,20 @@ article {
     grid-template-rows: 1fr 1fr;
 }
 
+#accountsWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+
 .account img {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+}
+
+.account span:first-of-type{
+    font-weight: 600;
 }
 
 .account span:last-of-type, .cardContent, .announcementsContent {
@@ -254,6 +297,10 @@ color: var(--text-color);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+#profileName {
+    font-size: 2.7rem;
 }
 
 
