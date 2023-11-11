@@ -5,10 +5,12 @@
 html {
     font-size: 62.5%;
     min-height: 100vh;
+    --text-color: #6F6F6F; 
 }
 
 body {
     min-height: 100vh;
+    font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -27,7 +29,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .sidebarP {
@@ -36,6 +38,10 @@ aside {
     gap: 1.5rem;
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+.sidebarSpan {
+    font-size: 2rem;
 }
 
 .logo {
@@ -54,7 +60,7 @@ aside {
 }
 
 #pageName {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -166,13 +172,37 @@ button {
 
 main {
     background-color: #E2E8F0;
-    display: grid;
+    display: grid !important; 
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+h2 {
+    font-weight: 1000;
+}
+
+h3 {
+    margin: 0;
 }
 
 article {
     grid-column: 1 / span 1;
+}
+
+.articleWrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 600px));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-left:  5px solid #EDB93F;
 }
 
 .userpicks{
@@ -180,3 +210,32 @@ article {
     width: 3rem;
     border-radius: 50%;
 }
+
+#accountsWrapper, 
+#announcementsWrapper{
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.mainSide {
+    grid-column: 2;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.account img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.account span:last-of-type {
+color: var(--text-color);
+}
+
+
+
