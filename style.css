@@ -20,7 +20,7 @@ body {
 }
 
 aside {
-    background-color: rgb(0, 153, 255);
+    background-color: #1992D4;
     color: whitesmoke;
     grid-row: 1 / span 2;
     grid-column: 1 / span 1;
@@ -60,9 +60,11 @@ aside {
 
 header {
     display: grid;
+    position: relative;
     grid-template-rows: repeat(2, 1fr);
-    box-shadow: 5px 10px 5px red;
+    box-shadow: 0px 5px 5px 0px #b1b0ab;;
     padding: 2rem;
+    gap: 1rem;
 }
 
 .searchPart {
@@ -83,6 +85,7 @@ input {
 
 .leftPart {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -120,7 +123,7 @@ input {
 .hiUser {
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
 }
 
 .hiUser img {
@@ -145,17 +148,24 @@ input {
 .buttons {
     display: flex;
     align-items: center;
+    font-size: 16px;
     justify-content: right;
     gap: 2rem;
 }
 
 button {
-    width: 10%;
+    width: 13rem;
+    background-color: #1992D4;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem;
 }
 
 
 main {
-    background-color: beige;
+    background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
