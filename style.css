@@ -167,6 +167,8 @@ button {
     width: 13rem;
     background-color: #1992D4;
     color: aliceblue;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -179,7 +181,7 @@ main {
     display: grid !important; 
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
-    padding: 1rem 3rem 1rem 2rem;
+    padding: 1rem 3rem 3rem 2rem;
     gap: 2rem;
 }
 
@@ -204,7 +206,7 @@ article {
 
 .card {
     background-color: #FFFFFF;
-    padding: 2.5rem;
+    padding: 2rem;
     border-left:  5px solid #EDB93F;
     border-radius: 10px 0px 0px 10px;
     min-height: 200px;
@@ -237,7 +239,7 @@ article {
 
 #accountsWrapper, 
 #announcementsWrapper{
-    padding: 2rem;
+    padding: 1rem 2rem;
     background-color: #FFFFFF;
     border-radius: 5px;
 }
