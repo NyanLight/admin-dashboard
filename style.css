@@ -174,3 +174,9 @@ main {
 article {
     grid-column: 1 / span 1;
 }
+
+.userpicks{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}

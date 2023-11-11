@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin dashboard</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="searchPart">
-            <div class="leftPart">
-                <img src="assets/magnify.svg" alt="magnify icon" class="icons">
-                <input type="search">
-            </div>
-            <div class="rightPart">
-                <img src="assets/bell-ring.svg" alt="ringing bell icon" class="icons">
-                <img src="assets/userPick.jpg" alt="user pic" class="userpick">
-                <span>Donnie Darko</span>
-            </div>
+          <div class="leftPart">
+            <img src="assets/magnify.svg" alt="magnify icon" class="icons" />
+            <input type="search" />
+          </div>
+          <div class="rightPart">
+            <img
+              src="assets/bell-ring.svg"
+              alt="ringing bell icon"
+              class="icons"
+            />
+            <img src="assets/userPick.jpg" alt="user pic" class="userpick" />
+            <span>Donnie Darko</span>
+          </div>
         </div>
         <div class="accountPart">
-            <div class="hiUser">
-                <img src="assets/userPick.jpg" alt="user pic" class="userpick">
-                <span>Hi, there.</span>
-                <span>Donnie Darko (@nyanlight)</span>
-            </div>
-            <div class="buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+          <div class="hiUser">
+            <img src="assets/userPick.jpg" alt="user pic" class="userpick" />
+            <span>Hi, there.</span>
+            <span>Donnie Darko (@nyanlight)</span>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
       </header>
       <aside>
@@ -43,67 +47,223 @@
           <span id="pageName">Dashboard</span>
         </div>
         <section class="firstSection">
-            <p class="sidebarP"><img src="assets/home.svg" alt="home icon" class="icons"/><span class="sidebarSpan">Home</span></p>
-            <p class="sidebarP"><img src="assets/card-account-details-outline.svg" alt="profile icon" class="icons" /><span class="sidebarSpan">Profile</span></p>
-            <p class="sidebarP"><img src="assets/message.svg" alt="message icon" class="icons"><span class="sidebarSpan">Messages</span></p>
-            <p class="sidebarP"><img src="assets/clock.svg" alt="history icon" class="icons"><span class="sidebarSpan">History</span></p>
-            <p class="sidebarP"><img src="assets/file-multiple.svg" alt="tasks icon" class="icons"><span class="sidebarSpan">Tasks</span></p>
-            <p class="sidebarP"><img src="assets/account-group.svg" alt="communities icon" class="icons"><span class="sidebarSpan">Communities</span></p>
+          <p class="sidebarP">
+            <img src="assets/home.svg" alt="home icon" class="icons" /><span
+              class="sidebarSpan"
+              >Home</span
+            >
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/card-account-details-outline.svg"
+              alt="profile icon"
+              class="icons"
+            /><span class="sidebarSpan">Profile</span>
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/message.svg"
+              alt="message icon"
+              class="icons"
+            /><span class="sidebarSpan">Messages</span>
+          </p>
+          <p class="sidebarP">
+            <img src="assets/clock.svg" alt="history icon" class="icons" /><span
+              class="sidebarSpan"
+              >History</span
+            >
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/file-multiple.svg"
+              alt="tasks icon"
+              class="icons"
+            /><span class="sidebarSpan">Tasks</span>
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/account-group.svg"
+              alt="communities icon"
+              class="icons"
+            /><span class="sidebarSpan">Communities</span>
+          </p>
         </section>
         <section class="secondSection">
-            <p class="sidebarP"><img src="assets/cog.svg" alt="settings icon" class="icons"><span class="sidebarSpan">Settings</span></p>
-            <p class="sidebarP"><img src="assets/help-box.svg" alt="support icon" class="icons"><span class="sidebarSpan">Support</span></p>
-            <p class="sidebarP"><img src="assets/shield-check.svg" alt="privacy icon" class="icons"><span class="sidebarSpan">Privacy</span></p>
+          <p class="sidebarP">
+            <img src="assets/cog.svg" alt="settings icon" class="icons" /><span
+              class="sidebarSpan"
+              >Settings</span
+            >
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/help-box.svg"
+              alt="support icon"
+              class="icons"
+            /><span class="sidebarSpan">Support</span>
+          </p>
+          <p class="sidebarP">
+            <img
+              src="assets/shield-check.svg"
+              alt="privacy icon"
+              class="icons"
+            /><span class="sidebarSpan">Privacy</span>
+          </p>
         </section>
-    </aside>
+      </aside>
       <main>
         <article>
-            <div class="card">
-                <h3>Super Cool project</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laborum!
+          <h2>Your Projects</h2>
+          <div class="card">
+            <h3>Super Cool project</h3>
+            <span class="cardContent"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              laborum!</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
-            <div class="card">
-                <h3>Less Cool Project</h3>
-                Tempore asperiores pariatur, dolores exercitationem aspernatur fugiat autem facere eum.
+          </div>
+          <div class="card">
+            <h3>Less Cool Project</h3>
+            <span class="cardContent"
+              >Tempore asperiores pariatur, dolores exercitationem aspernatur
+              fugiat autem facere eum.</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
-            <div class="card">
-                <h3>Impossible App</h3>
-                Numquam reprehenderit rem odit nesciunt ut tempora reiciendis tenetur ducimus.
+          </div>
+          <div class="card">
+            <h3>Impossible App</h3>
+            <span class="cardContent"
+              >Numquam reprehenderit rem odit nesciunt ut tempora reiciendis
+              tenetur ducimus.</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
-            <div class="card">
-                <h3>Easy Peasy App</h3>
-                Ad consequuntur minima odit accusantium dolor, repellat et eos laboriosam?
+          </div>
+          <div class="card">
+            <h3>Easy Peasy App</h3>
+            <span class="cardContent"
+              >Ad consequuntur minima odit accusantium dolor, repellat et eos
+              laboriosam?</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
-            <div class="card">
-                <h3>Ad blocker</h3>
-                Doloremque laudantium rerum ducimus architecto culpa voluptate, rem quas quibusdam!
+          </div>
+          <div class="card">
+            <h3>Ad blocker</h3>
+            <span class="cardContent"
+              >Doloremque laudantium rerum ducimus architecto culpa voluptate,
+              rem quas quibusdam!</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
-            <div class="card">
-                <h3>Money Maker</h3>
-                Quasi libero, nemo iusto totam omnis id alias illo vitae?
+          </div>
+          <div class="card">
+            <h3>Money Maker</h3>
+            <span class="cardContent"
+              >Quasi libero, nemo iusto totam omnis id alias illo vitae?</span
+            >
+            <div class="cardIcons">
+              <img
+                class="icons"
+                src="assets/star.svg"
+                alt="Favorite icon"
+              /><img class="icons" src="assets/eye.svg" alt="eye icon" /><img
+                class="icons"
+                src="assets/graph.svg"
+                alt="share icon"
+              />
             </div>
+          </div>
         </article>
         <div class="mainSide">
-            <div class="announcements">
-                <div class="announcement">
-                    <h4></h4>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, quae?
-                </div>
-                <div class="announcement">
-                    <h4></h4>
-                    Animi sit vitae repellat voluptas officia, saepe ea dolorem iste.
-                </div>
-                <div class="announcement">
-                    <h4></h4>
-                    Laborum, nostrum quod. Odio adipisci quaerat aliquid at voluptas cum.
-                </div>
+          <div class="announcements">
+            <h2>Announcements</h2>
+            <div id="announcementsWrapper">
+              <div class="announcement">
+                <h4>Site Maintence</h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Impedit, quo?
+              </div>
+              <div class="announcement">
+                <h4>Community Share Day</h4>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                beatae?
+              </div>
+              <div class="announcement">
+                <h4>Updated Privacy Policy</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Mollitia, perspiciatis? Illum accusantium explicabo aut magnam!
+              </div>
             </div>
-            <div class="trending">
-                <div class="account"></div>
-                <div class="account"></div>
-                <div class="account"></div>
-                <div class="account"></div>
+          </div>
+          <div class="trending">
+            <h2>Trending</h2>
+            <div id="accountsWrapper">
+              <div class="account">
+                <img class="userpicks" src="assets/userpick2.jpg" alt="userpick" /><span>@hugeletters</span
+                ><span>World Peace Builder</span>
+              </div>
+              <div class="account">
+                <img class="userpicks" src="assets/userPick.jpg" alt="userpick" /><span>@nyanlight</span
+                ><span>Super Cool Project</span>
+              </div>
+              <div class="account">
+                <img class="userpicks" src="assets/userpick3.jpg" alt="userpick" /><span>@acidprayer</span
+                ><span>Life Changing App</span>
+              </div>
+              <div class="account">
+                <img class="userpicks" src="assets/userpick4.jpg" alt="userpick" /><span>@satoyune</span
+                ><span>No Traffic Maker</span>
+              </div>
             </div>
+          </div>
         </div>
       </main>
     </div>
